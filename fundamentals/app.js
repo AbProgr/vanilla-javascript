@@ -53,3 +53,20 @@ test2 = [1, 2, 3];
 console.log(test2); // error - TypeError: Assignment to constant variable. - as we cannot assign new value
 // end of const
 // end of variable
+
+// data types
+// primitives
+console.log(typeof "apple");
+console.log(typeof 123);
+console.log(typeof false);
+console.log(typeof null);
+console.log(typeof Symbol());
+// end of primitives
+
+// reference
+console.log(typeof { a: 1, b: 2 });
+console.log(typeof [1, 2, 3]);
+console.log(typeof new Date());
+console.log(typeof function dummy() {});
+// end of reference
+// end of data types
