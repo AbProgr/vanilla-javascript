@@ -70,3 +70,30 @@ console.log(typeof new Date());
 console.log(typeof function dummy() {});
 // end of reference
 // end of data types
+
+// type conversion
+// string conversions
+console.log(typeof String(123));
+console.log(String(true).length);
+console.log(String(new Date()));
+console.log(String([1, 2, 3]));
+console.log(typeof true.toString());
+const num = 123;
+console.log(typeof num.toString());
+// end of string conversions
+
+// number conversions
+console.log(typeof Number("5"));
+console.log(Number("5").toFixed());
+console.log(Number(true));
+console.log(Number("hello"));
+console.log(Number([1, 2, 3]));
+console.log(parseInt("120.12"));
+console.log(parseFloat("120.12"));
+// end of number conversions
+
+// type coersion
+console.log(5 + "0");
+console.log("5" + 0);
+// end of type coersion
+// end of type conversion
