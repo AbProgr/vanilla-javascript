@@ -195,3 +195,48 @@ const obj = {
 console.log(obj.age());
 //end of method
 // end of functions
+
+// 10). loops
+// 10.1). for loop
+for (let i = 0; i < 5; i++) {
+  if (i === 2) {
+    continue; // moves to next iteration
+  }
+  if (i === 4) {
+    break; // exits the loop
+  }
+  console.log(i);
+}
+// end of for loop
+
+// 10.2). while loop
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+// end of while loop
+
+// 10.3). do-while loop
+let j = 0;
+do {
+  console.log(j);
+  j++;
+} while (j < 5);
+// end of do-while loop
+
+// 10.4). forEach loop
+const arr = [1, 2, 3, 4];
+arr.forEach((item) => console.log(item));
+// end of forEach loop
+
+// 10.4). for...in loop
+const obj_1 = {
+  a: 1,
+  b: 2,
+};
+for (let key in obj_1) {
+  console.log(key + " : " + obj_1[key]);
+}
+// end of for...in loop
+// end of loops
