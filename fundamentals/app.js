@@ -113,3 +113,22 @@ console.log(Math.random());
 
 console.log(Math.floor(Math.random() * 10 + 1)); // generate random no btwn 0-10
 // end of math functions
+
+// array
+const numArr = [1, 3, 5, 7];
+const strArr = ["a", "b", "c", "d"];
+const mixedArr = [1, "b", true, undefined, null, { a: 1, b: 2 }, [1, "d"]];
+console.log(mixedArr);
+
+console.log(numArr.length); // length of array
+console.log(Array.isArray(numArr)); // check if a value is array or not
+console.log(numArr[1]); // zero based index to get value at a position
+numArr.push(9); // inserts at end
+numArr[5] = 10; // inserts value at 6th position
+numArr.unshift(100); // adds value at start i.e. 0th index
+numArr.pop(); //removes from last position
+numArr.shift(); // removes from front i.e. 0th index
+numArr.splice(1, 3); // removes element from start position upto a given index
+console.log(strArr.reverse()); // reverses an array
+console.log(numArr.sort());
+// end of array
