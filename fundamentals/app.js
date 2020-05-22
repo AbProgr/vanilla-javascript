@@ -152,3 +152,15 @@ console.log(person.age); // also person['age'];
 console.log(person.address.city); // also person['address']['city'];
 console.log(person.fullName());
 // end of object
+
+// date
+const today = new Date();
+console.log(today);
+console.log(today.toString());
+console.log(today.getMonth()); // zero based index
+console.log(today.getFullYear());
+console.log(today.getDay());
+
+today.setFullYear(2022);
+today.setMonth(3);
+// end of date
