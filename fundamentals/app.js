@@ -114,7 +114,7 @@ console.log(Math.random());
 console.log(Math.floor(Math.random() * 10 + 1)); // generate random no btwn 0-10
 // end of math functions
 
-// array
+// 6). array
 const numArr = [1, 3, 5, 7];
 const strArr = ["a", "b", "c", "d"];
 const mixedArr = [1, "b", true, undefined, null, { a: 1, b: 2 }, [1, "d"]];
@@ -133,7 +133,7 @@ console.log(strArr.reverse()); // reverses an array
 console.log(numArr.sort());
 // end of array
 
-// object
+// 7). object
 const person = {
   fName: "John",
   lName: "Doe",
@@ -153,7 +153,7 @@ console.log(person.address.city); // also person['address']['city'];
 console.log(person.fullName());
 // end of object
 
-// date
+// 8). date
 const today = new Date();
 console.log(today);
 console.log(today.toString());
@@ -164,3 +164,34 @@ console.log(today.getDay());
 today.setFullYear(2022);
 today.setMonth(3);
 // end of date
+
+// 9). functions
+// 9.1). named function
+function add(a = 0, b = 0) {
+  return a + b;
+}
+console.log(add(2 + 3));
+// end of named function
+
+// 9.2). function expression
+const add_1 = function (a, b) {
+  return a + b;
+};
+console.log(add_1(5, 6));
+//end of function expression
+
+// 9.3). immediately invokable function expression (IIFE)
+(function (a, b) {
+  console.log(a + b);
+})(5, 7);
+//end of IIFE
+
+// 9.4). method
+const obj = {
+  age: function () {
+    return 18;
+  },
+};
+console.log(obj.age());
+//end of method
+// end of functions
