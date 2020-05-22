@@ -132,3 +132,23 @@ numArr.splice(1, 3); // removes element from start position upto a given index
 console.log(strArr.reverse()); // reverses an array
 console.log(numArr.sort());
 // end of array
+
+// object
+const person = {
+  fName: "John",
+  lName: "Doe",
+  age: 27,
+  address: {
+    city: "xyz",
+    street: "abc",
+  },
+  fullName() {
+    return this.fName + this.lName;
+  },
+};
+
+console.log(person);
+console.log(person.age); // also person['age'];
+console.log(person.address.city); // also person['address']['city'];
+console.log(person.fullName());
+// end of object
